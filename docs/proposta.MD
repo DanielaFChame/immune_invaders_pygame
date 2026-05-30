@@ -110,11 +110,11 @@ Informe os comandos que serão utilizados pelo jogador.
 
 Organização planejada:
 
-- main.py: arquivo principal, responsável por iniciar o jogo.
-- src/config.py: arquivo com configurações gerais, como tamanho da tela, FPS, cores, velocidade inicial e quantidade de vidas.
-- src/jogo.py: arquivo com o loop principal do jogo, atualização dos elementos e controle dos estados da partida.
-- src/entidades.py: arquivo com funções relacionadas ao jogador, vírus, disparos e colisões.
-- src/funcoes.py: arquivo com funções auxiliares, como criação de inimigos, atualização da pontuação e verificação de vitória ou derrota.
+- `main.py`: arquivo principal, responsável por iniciar o jogo.
+- `src/config.py`: arquivo com configurações gerais, como tamanho da tela, FPS, cores, velocidade inicial e quantidade de vidas.
+- `src/jogo.py`: arquivo com o loop principal do jogo, atualização dos elementos e controle dos estados da partida.
+- `src/entidades.py`: arquivo com funções relacionadas ao jogador, vírus, disparos e colisões.
+- `src/funcoes.py`: arquivo com funções auxiliares, como criação de inimigos, atualização da pontuação e verificação de vitória ou derrota.
 - `src/dados.py`: contém funções de leitura e escrita de arquivos.
 
 
