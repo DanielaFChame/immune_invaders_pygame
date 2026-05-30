@@ -18,23 +18,6 @@ Liste os integrantes do grupo.
 
 Indique o tipo de jogo que será desenvolvido.
 
-Exemplos:
-
-- jogo de desviar de obstáculos;
-- jogo de coleta de itens;
-- labirinto simples;
-- jogo de perguntas e respostas;
-- jogo de memória;
-- Pong;
-- Snake;
-- Breakout;
-- nave desviando de meteoros;
-- corrida simples com obstáculos;
-- jogo de clique rápido;
-- jogo de sobrevivência simples.
-
-Tipo escolhido pelo grupo:
-
 Jogo de tiro e sobrevivência simples inspirado em Space Invaders, no qual o jogador controla uma célula de defesa do sistema imunológico que precisa eliminar vírus invasores antes que eles atinjam a parte inferior da tela.
 
 ## 4. Descrição geral do jogo
@@ -60,16 +43,6 @@ Os principais desafios serão acertar os vírus, evitar que eles cheguem à regi
 
 Explique qual é o objetivo principal do jogador.
 
-Exemplos:
-
-- coletar o maior número possível de itens;
-- sobreviver pelo maior tempo possível;
-- chegar até o final do labirinto;
-- acertar alvos;
-- responder perguntas corretamente;
-- evitar obstáculos;
-- quebrar todos os blocos.
-
 Objetivo:
 
 O objetivo principal do jogador é defender o organismo, acertando alvos, os quais são os vírus invasores, antes que eles alcancem a parte inferior da tela ou antes que o jogador perca todas as vidas.
@@ -77,16 +50,6 @@ O objetivo principal do jogador é defender o organismo, acertando alvos, os qua
 ## 6. Regras principais
 
 Liste as principais regras do jogo.
-
-Exemplo:
-
-- O jogador começa com 3 vidas.
-- Cada moeda coletada vale 10 pontos.
-- Cada colisão com obstáculo remove 1 vida.
-- A partida termina quando as vidas chegam a zero.
-- O jogador vence se alcançar 100 pontos.
-
-Regras do grupo:
 
 - Regra 1: O jogador começa a partida com 3 vidas.
 - Regra 2: O jogador controla uma célula de defesa que pode se mover horizontalmente na parte inferior da tela.
@@ -100,43 +63,17 @@ Regras do grupo:
 
 Explique como o jogador vence ou conclui o jogo.
 
-Exemplos:
-
-- atingir determinada pontuação;
-- chegar ao final da fase;
-- sobreviver até o tempo acabar;
-- responder uma quantidade mínima de perguntas;
-- quebrar todos os blocos.
-
-Condição de vitória:
-
-O jogador vence a partida quando consegue eliminar todos os vírus da fase antes de perder todas as vidas. 
+O jogador vence a partida quando consegue eliminar todos os vírus da fase antes de perder todas as vidas ou sobreviver até o tempo acabar. 
 
 ## 8. Condição de derrota ou encerramento
 
 Explique como o jogador perde ou quando a partida termina.
 
-Exemplos:
-
-- perder todas as vidas;
-- acabar o tempo;
-- colidir com determinado obstáculo;
-- errar muitas perguntas;
-- deixar a bola cair, no caso de Breakout ou Pong.
-
-Condição de derrota ou encerramento:
-
-O jogador perde quando suas vidas chegam a zero. Isso pode acontecer quando vírus atingem a parte inferior da tela ou quando colidem com a célula de defesa. 
+O jogador perde quando suas vidas chegam a zero. Isso pode acontecer quando vírus atingem a parte inferior da tela ou quando colidem com a célula de defesa. A partida também poderá ser encerrada pelo jogador ao pressionar a tecla ESC ou fechar a janela do jogo.
 
 ## 9. Elementos previstos no jogo
 
-Descreva os principais elementos que farão parte do jogo.
-
 ## Jogador ou elemento principal
-
-Exemplo:
-
-> Um personagem controlado pelas setas do teclado.
 
 Descrição:
 
@@ -144,19 +81,11 @@ O jogador controlará uma célula de defesa do sistema imunológico, posicionada
 
 ## Obstáculos, inimigos ou desafios
 
-Exemplo:
-
-> Obstáculos aparecem em posições aleatórias e devem ser evitados.
-
 Descrição:
 
 Os inimigos serão vírus invasores que aparecerão na parte superior da tela. Eles poderão estar organizados em linhas e colunas, movendo-se lateralmente e descendo aos poucos, de maneira semelhante à lógica de Space Invaders. O principal desafio será impedir que eles cheguem à parte inferior da tela.
 
 ## Itens, alvos ou objetos de interação
-
-Exemplo:
-
-> Moedas aparecem na tela e aumentam a pontuação quando coletadas.
 
 Descrição:
 
@@ -164,28 +93,13 @@ Os principais alvos serão os vírus. O jogador interage com eles por meio dos d
 
 ## Pontuação, vidas, tempo ou progresso
 
-Exemplo:
-
-> O jogador começa com 3 vidas e ganha 10 pontos por item coletado.
-
 Descrição:
 
-O jogador começará com 3 vidas. Cada vírus eliminado concederá pontos. A pontuação será exibida na tela junto com a quantidade de vidas restantes. O progresso da fase será representado pela quantidade de vírus ainda vivos.
+O jogador começará com 3 vidas. Cada vírus eliminado concederá 10 pontos. A pontuação será exibida na tela junto com a quantidade de vidas restantes. O progresso da fase será representado pela quantidade de vírus ainda vivos.
 
 ## 10. Controles previstos
 
 Informe os comandos que serão utilizados pelo jogador.
-
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
-- ESC: sair do jogo
-
-Controles do grupo:
 
 - Tecla/comando: Seta para a esquerda — mover a célula para a esquerda.
 - Tecla/comando: Seta para a direita — mover a célula para a direita.
@@ -193,16 +107,6 @@ Controles do grupo:
 - Tecla/comando: ESC — sair da partida ou encerrar o jogo.
 
 ## 11. Organização inicial do código
-
-Explique como o grupo pretende organizar o código.
-
-Exemplo:
-
-- `main.py`: inicia o jogo;
-- `src/jogo.py`: contém o loop principal;
-- `src/config.py`: guarda configurações como tamanho da tela e cores;
-- `src/funcoes.py`: contém funções auxiliares;
-- `src/dados.py`: contém funções de leitura e escrita de arquivos.
 
 Organização planejada:
 
@@ -216,35 +120,12 @@ Organização planejada:
 
 ## 12. Recursos externos previstos
 
-Informe se o grupo pretende utilizar imagens, sons, fontes, tutoriais ou códigos externos.
-
-Exemplo:
-
-- imagens obtidas de banco gratuito;
-- sons gratuitos;
-- tutorial usado apenas como referência;
-- fonte personalizada.
-
-Recursos previstos:
 
 Inicialmente, serão usadas formas geométricas simples desenhadas com o próprio Pygame, como retângulos, círculos ou sprites básicos. Isso reduz a dependência de recursos externos e facilita a entrega da versão mínima.
 
 Caso haja tempo, poderão ser usados sons gratuitos e imagens simples de domínio livre ou com licença gratuita, o uso e a fonte destes elementos serão indicadas no arquivo README.md.
 
 ## 13. Principais dificuldades esperadas
-
-Liste as dificuldades que o grupo acredita que poderá enfrentar.
-
-Exemplos:
-
-- movimentação do jogador;
-- colisão entre objetos;
-- controle de tempo;
-- criação do ranking;
-- organização do código;
-- uso do GitHub;
-- testes;
-- exibição de textos na tela.
 
 Dificuldades previstas:
 
@@ -256,14 +137,6 @@ Dificuldades previstas:
 
 ## 14. Escopo mínimo para a entrega final
 
-Descreva qual será a versão mínima aceitável do jogo.
-
-Esta seção é importante para evitar que o grupo escolha uma ideia grande demais.
-
-Exemplo:
-
-> A versão mínima do jogo terá um personagem controlado pelo teclado, obstáculos aparecendo na tela, sistema de vidas, sistema de pontuação e tela de fim de jogo.
-
 Escopo mínimo:
 
 A versão mínima do jogo terá uma tela principal de jogo, uma célula de defesa controlada pelo teclado, vírus inimigos na parte superior da tela, disparos de anticorpos, colisão entre disparos e vírus, sistema de pontuação, sistema de vidas, condição de vitória ao eliminar todos os vírus e condição de derrota ao perder todas as vidas.
@@ -272,24 +145,44 @@ Também serão incluídos um arquivo README.md com documentação básica, a pro
 
 ## 15. Possíveis melhorias, caso haja tempo
 
-Liste funcionalidades extras que o grupo poderá implementar se conseguir concluir o escopo mínimo.
-
-Exemplos:
-
-- tela inicial;
-- sons;
-- fases;
-- aumento de dificuldade;
-- ranking;
-- animações;
-- novos tipos de obstáculos;
-- diferentes personagens;
-- menu de pausa.
-
-Melhorias possíveis:
 
 - Melhoria 1: Criar aumento progressivo de dificuldade, com vírus se movendo mais rápido a cada fase.
 - Melhoria 2: Adicionar diferentes tipos de vírus, com pontuações ou velocidades diferentes.
 - Melhoria 3: Adicionar item especial de recuperação de vida ou disparo mais rápido.
 - Melhoria 4: Adicionar efeitos sonoros para disparo, colisão e fim de jogo.
 - Melhoria 5: Criar ranking simples com os melhores recordes salvos em arquivo.
+
+## 16. Estrutura de Dados que poderão ser utilizadas:
+
+O jogo poderá utilizar as seguintes estruturas de dados:
+
+- Lista para armazenar os vírus ativos na tela.
+- Lista para armazenar os disparos do jogador.
+- Dicionário para armazenar informações do jogador, como posição, velocidade, vidas e pontuação.
+- Tuplas para representar posições, tamanhos ou cores.
+- Lista de dicionários para representar diferentes tipos de vírus, com atributos como posição, velocidade, pontuação e estado.
+
+## 17. Uso previsto de arquivos: 
+
+O jogo utilizará arquivo para salvar o recorde do jogador. Ao iniciar o jogo, o programa poderá ler o arquivo de recorde. Ao final da partida, se a pontuação atual for maior que o recorde salvo, o arquivo será atualizado.
+
+Arquivo previsto: recorde.txt
+
+Uso previsto:
+
+- Ler o maior recorde ao iniciar o jogo.
+- Exibir o recorde na tela.
+- Atualizar o recorde ao final da partida, se necessário.
+
+Caso haja tempo, também poderá ser criado um arquivo para ranking com mais de uma pontuação.
+
+## 18. Testes Planejados: 
+
+- Testar se a pontuação aumenta corretamente quando um vírus é eliminado.
+- Testar se a função de colisão identifica corretamente quando dois objetos se encostam.
+- Testar se a condição de vitória retorna verdadeiro quando não há mais vírus na lista.
+- Testar se a condição de derrota retorna verdadeiro quando as vidas chegam a zero.
+- Testar se o recorde é atualizado apenas quando a pontuação atual é maior que o recorde anterior.
+- Testar se o jogador não ultrapassa os limites laterais da tela.
+
+
