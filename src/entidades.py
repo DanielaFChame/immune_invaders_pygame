@@ -8,7 +8,9 @@
 #   - vírus (movimento em grupo)
 #   - colisões (anticorpo x vírus, vírus chegando na base)
 #
-# Cada elemento é um DICIONÁRIO com posição e tamanho. 
+# Importante: aqui também NÃO usamos pygame. Cada elemento é só
+# um DICIONÁRIO com posição e tamanho. O desenho na tela fica
+# por conta do arquivo jogo.py. Isso deixa a lógica testável.
 # ============================================================
 
 import config
