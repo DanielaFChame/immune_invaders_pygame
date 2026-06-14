@@ -9,7 +9,8 @@ import funcoes
 import dados
 
 
-
+# Caminho do arquivo de recorde (dentro da pasta data/, na raiz do projeto).
+# Subimos uma pasta a partir de src/ para chegar na raiz do projeto.
 PASTA_RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAMINHO_RECORDE = os.path.join(PASTA_RAIZ, "data", config.ARQUIVO_RECORDE)
 
