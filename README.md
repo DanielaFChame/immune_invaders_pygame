@@ -1,73 +1,61 @@
-# Nome do Jogo
+# Immuno Invaders
 
 Projeto final da disciplina de Introdução a Algoritmos/Programação, desenvolvido com Python e Pygame.
 
-Este repositório é um template para os grupos da disciplina. A proposta é começar com uma base funcional e evoluir o jogo ao longo do semestre.
+Jogo de tiro e sobrevivência inspirado em *Space Invaders*. O jogador controla uma **célula de defesa** do sistema imunológico e precisa eliminar os **vírus invasores** com disparos de **anticorpos** antes que eles cheguem à base da tela.
 
 ## Integrantes do grupo
 
-- Nome do integrante 1
-- Nome do integrante 2
-- Nome do integrante 3
-- Nome do integrante 4
+- Daniela Ferreira Chame
 
 ## Estrutura do projeto
 
 - `main.py`: ponto de entrada da aplicação.
 - `src/`: código-fonte principal do jogo (loop, regras, sprites e dados).
-- `assets/`: imagens, fontes e sons.
-- `data/`: arquivos persistentes (recorde/ranking).
-- `tests/`: testes unitários com `pytest`.
+  - `config.py/`: configurações gerais (tela, FPS, cores, velocidades, vidas).
+  - `jogo.py/`: loop principal, estados da partida e desenho na tela.
+  - `entidades.py/`: jogador, vírus, anticorpos e colisões.
+  - `funcoes.py/`: criação dos vírus, contagem e condições de vitória/derrota.
+- `data/`: arquivos persistentes. Contém recorde.txt, com o maior recorde (lido ao iniciar e atualizado ao fim da partida). A pasta é criada automaticamente pelo jogo, caso não exista.
+- `tests/`: testes das funções de lógica.
 - `docs/`: documentação do projeto, incluindo proposta inicial.
+- `assets/`: pasta opcional para imagens e sons (usada apenas nas melhorias; por padrão o jogo desenha com formas geométricas e não depende dela).
 
 ## Descrição do jogo
 
-Descreva brevemente a ideia principal do jogo.
-
-Exemplo:
-
-> O jogo consiste em controlar um personagem que deve coletar moedas e evitar obstáculos. O jogador ganha pontos ao coletar itens e perde vidas ao colidir com obstáculos. A partida termina quando o tempo acaba ou quando o jogador perde todas as vidas.
+O jogo se passa, de forma simplificada, dentro de um organismo. O jogador controla uma célula de defesa do sistema imunológico, posicionada na parte inferior da tela, enquanto vírus invasores surgem no topo, organizados em fileiras, e descem aos poucos em direção à base. A célula dispara anticorpos para cima para destruir os vírus. Cada vírus eliminado aumenta a pontuação. A partida termina em vitória quando todos os vírus são eliminados e em derrota quando o jogador perde todas as vidas. O maior recorde é salvo em arquivo e exibido na tela.
 
 ## Objetivo do jogador
 
-Explique o que o jogador precisa fazer para vencer ou avançar no jogo.
-
-Exemplo:
-
-> O objetivo é coletar a maior quantidade possível de itens antes que o tempo acabe, evitando colisões com os obstáculos.
+Defender o organismo eliminando todos os vírus invasores com os disparos de anticorpos, sem deixar que eles alcancem a base da tela ou colidam com a célula, e sem perder todas as vidas. Vence quem limpa a tela de vírus; o desafio extra é fazer a maior pontuação possível e superar o recorde salvo.
 
 ## Regras do jogo
 
-Liste as principais regras do jogo.
-
-Exemplo:
-
-- O jogador se movimenta usando as setas do teclado.
-- Cada item coletado aumenta a pontuação.
-- Colidir com um obstáculo reduz a quantidade de vidas.
-- A partida termina quando o jogador perde todas as vidas ou quando o tempo acaba.
-
+- A célula de defesa se movimenta na horizontal usando as setas esquerda e direita.
+- A barra de espaço dispara anticorpos para cima (com um pequeno intervalo entre tiros).
+- Cada vírus eliminado vale 10 pontos.
+- O jogador começa com 3 vidas.
+- O jogador perde 1 vida quando um vírus alcança a base (linha de defesa) ou colide com a célula; nesse caso a onda de vírus reaparece no topo.
+- A partida termina em vitória ao eliminar todos os vírus.
+- A partida termina em derrota ao perder todas as vidas.
+- A maior pontuação é salva em arquivo e mostrada como recorde.
+  
 ## Controles
 
-Informe as teclas ou comandos utilizados no jogo.
-
-Exemplo:
-
-- Seta para cima: mover para cima
-- Seta para baixo: mover para baixo
-- Seta para esquerda: mover para esquerda
-- Seta para direita: mover para direita
-- Espaço: realizar ação
+- Seta para esquerda: mover a célula para a esquerda
+- Seta para direita: mover a célula para a direita
+- Espaço: disparar anticorpo (e iniciar a partida na tela inicial)
+- R: jogar de novo (nas telas de vitória ou derrota)
 - ESC: sair do jogo
 
 ## Como executar o projeto
 
 ### 1. Clonar o repositório
 
-```bash
+```
 git clone LINK_DO_REPOSITORIO
 cd NOME_DA_PASTA
-pip install -r requirements.txt
+pip install pygame
 python main.py
 ```
 
