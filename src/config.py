@@ -4,7 +4,8 @@
 # Arquivo com as configurações gerais do jogo.
 # Neste arquivo são realizadas quaisquer mudanças de 
 # cor, o tamanho da tela, a velocidade dos vírus, a quantidade
-# de vidas, etc.
+# de vidas, etc. Veja o arquivo jogo para o desenho do jogador 
+# e os vírus, usando as ferramentas do pygame. 
 # ============================================================
 
 # ---------- TELA ----------
