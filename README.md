@@ -53,8 +53,8 @@ Defender o organismo eliminando todos os vírus invasores com os disparos de ant
 ### 1. Clonar o repositório
 
 ```
-git clone LINK_DO_REPOSITORIO
-cd NOME_DA_PASTA
+git clone https://github.com/DanielaFChame/immune_invaders_pygame.git
+cd immune_invaders_pygame
 pip install pygame
 python main.py
 ```

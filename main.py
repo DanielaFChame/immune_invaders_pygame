@@ -13,12 +13,11 @@
 import os
 import sys
 
-# Adiciona a pasta "src" à lista de lugares onde o Python procura
-# arquivos para importar. Sem isso, "import jogo" não funcionaria.
+
 PASTA_SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "src")
 sys.path.append(PASTA_SRC)
 
-import jogo  # noqa: E402  (importado depois de ajustar o caminho, de propósito)
+import jogo  
 
 
 if __name__ == "__main__":
