@@ -67,6 +67,7 @@ python -m pytest
 ## Assets Externos
 - Virus: <a href="https://www.flaticon.com/free-icons/virus" title="virus icons">Virus icons created by Good Ware - Flaticon</a>
 - Célula: <a href="https://www.flaticon.com/free-icons/white-blood-cell" title="white blood cell icons">White blood cell icons created by Freepik - Flaticon</a>
+- Sons: Gerados usando jsfxr.me 
 
 ## Checklist mínimo para entrega
 
