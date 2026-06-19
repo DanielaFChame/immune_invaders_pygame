@@ -104,6 +104,18 @@ def test_jogador_nao_passa_dos_limites():
     assert jogador["x"] <= config.LARGURA_TELA - jogador["largura"]
 
 
+# 7) Quando o tiro toca dois vírus empilhados, deve matar o da frente (maior y)
+def test_tiro_acerta_o_virus_da_frente():
+    virus_tras   = {"x": 100, "y": 100, "largura": 36, "altura": 36, "vivo": True, "pontos": 10}
+    virus_frente = {"x": 100, "y": 130, "largura": 36, "altura": 36, "vivo": True, "pontos": 10}
+    tiro = {"x": 115, "y": 128, "largura": 6, "altura": 16, "ativo": True}
+
+    entidades.verificar_acertos([tiro], [virus_tras, virus_frente])
+
+    assert virus_frente["vivo"] is False   # o da frente morreu
+    assert virus_tras["vivo"] is True       # o de trás continua vivo
+
+
 # ------------------------------------------------------------
 # Permite rodar "python tests/test_jogo.py" sem instalar pytest.
 # ------------------------------------------------------------

@@ -7,7 +7,7 @@ Esta pasta contém os módulos principais do jogo.
 - `jogo.py`: loop principal, eventos, atualização e renderização.
 - `config.py`: constantes globais (tela, cores, caminhos, FPS).
 - `funcoes.py`: funções auxiliares de regra e lógica.
-- `sprites.py`: carregamento e recorte de spritesheet.
+- `entidades.py`: Funções de movimento do jogo e de colisão
 - `dados.py`: leitura e gravação de dados (recorde/ranking).
 
 ## Dica de evolução

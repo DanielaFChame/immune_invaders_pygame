@@ -175,21 +175,28 @@ def colidiu(a, b):
 def verificar_acertos(anticorpos, lista_virus):
     """Confere se algum anticorpo acertou algum vírus.
 
-    Para cada disparo ativo, percorre os vírus vivos. Se houver
-    colisão: o vírus "morre", o disparo some e somamos os pontos.
-
-    Devolve o total de pontos ganhos nesta verificação.
+    Se o tiro estiver tocando mais de um vírus ao mesmo tempo,
+    acerta o que está MAIS À FRENTE (mais perto do jogador, ou seja,
+    o de maior y) — que é o que faz sentido visualmente.
     """
     pontos_ganhos = 0
     for anticorpo in anticorpos:
         if not anticorpo["ativo"]:
             continue
+
+        # Procura, entre os vírus tocados, o mais à frente (maior y)
+        alvo = None
         for virus in lista_virus:
             if virus["vivo"] and colidiu(anticorpo, virus):
-                virus["vivo"] = False        # vírus eliminado
-                anticorpo["ativo"] = False   # disparo é consumido
-                pontos_ganhos += virus["pontos"]
-                break  # esse disparo já acertou, não precisa testar outros vírus
+                if alvo is None or virus["y"] > alvo["y"]:
+                    alvo = virus
+
+        # Mata só esse e consome o tiro
+        if alvo is not None:
+            alvo["vivo"] = False
+            anticorpo["ativo"] = False
+            pontos_ganhos += alvo["pontos"]
+
     return pontos_ganhos
 
 

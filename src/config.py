@@ -23,23 +23,30 @@ AZUL = (90, 160, 230)
 AMARELO = (240, 220, 80)
 ROXO = (170, 90, 200)
 CINZA = (120, 120, 120)
-FUNDO = (15, 20, 35)        
+FUNDO = (234, 203, 210)  
+
+# ---------- TEMA KAWAII (fundo claro) ----------
+TEXTO = (90, 45, 70)             # texto escuro, legível no rosa
+TEXTO_DESTAQUE = (120, 70, 160)  # roxo para destaques (ex.: recorde)
+COR_VITORIA = (30, 140, 75)      # verde escuro p/ texto de vitória
+COR_DERROTA = (170, 35, 55)      # vermelho escuro p/ texto de derrota
+TIRO = (40, 170, 90)             # verde do tiro (anticorpo)      
 
 # ---------- JOGADOR (célula de defesa) ----------
-JOGADOR_LARGURA = 54
-JOGADOR_ALTURA = 30
+JOGADOR_LARGURA = 52
+JOGADOR_ALTURA = 52
 JOGADOR_VELOCIDADE = 6      # quantos pixels a célula anda por quadro
 VIDAS_INICIAIS = 3          # Regra 1 da proposta: começa com 3 vidas
 
 # ---------- ANTICORPO (o disparo do jogador) ----------
-ANTICORPO_LARGURA = 6
+ANTICORPO_LARGURA = 10
 ANTICORPO_ALTURA = 16
 ANTICORPO_VELOCIDADE = 9    # sobe rápido pela tela
 ANTICORPO_COOLDOWN = 300    # tempo mínimo (em milissegundos) entre um tiro e outro
 
 # ---------- VÍRUS (inimigos) ----------
-VIRUS_LARGURA = 38
-VIRUS_ALTURA = 30
+VIRUS_LARGURA = 48
+VIRUS_ALTURA = 48
 VIRUS_VELOCIDADE_X = 1      # velocidade lateral do grupo de vírus
 VIRUS_DESCIDA = 18          # quanto os vírus descem quando batem na borda
 VIRUS_LINHAS = 4            # nº de fileiras de vírus (a "matriz" de inimigos)
