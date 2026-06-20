@@ -19,7 +19,7 @@ Jogo de tiro e sobrevivência inspirado em *Space Invaders*. O jogador controla 
 - `data/`: arquivos persistentes. Contém recorde.txt, com o maior recorde (lido ao iniciar e atualizado ao fim da partida). A pasta é criada automaticamente pelo jogo, caso não exista.
 - `tests/`: testes das funções de lógica.
 - `docs/`: documentação do projeto, incluindo proposta inicial.
-- `assets/`: pasta opcional para imagens e sons (usada apenas nas melhorias; por padrão o jogo desenha com formas geométricas e não depende dela).
+- `assets/`: pasta com as imagens, sons e demais recursos usados no jogo.
 
 ## Descrição do jogo
 
