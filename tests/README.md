@@ -4,7 +4,7 @@ Esta pasta contem testes automatizados do projeto.
 
 ## Arquivos
 
-- `test_jogo.py`: valida funcoes puras de logica em `src/funcoes.py`.
+- `test_jogo.py`: testa funções de lógica do jogo nos módulos `entidades`, `funcoes` e `dados` (colisão, pontuação, vitória, derrota, recorde e limites do jogador).
 
 ## Como executar
 

@@ -2,15 +2,12 @@
 # dados.py
 # ------------------------------------------------------------
 # Arquivo responsável por LER e ESCREVER em arquivo.
-# Aqui guardamos o RECORDE (a maior pontuação já feita).
+# Aqui é guardado o RECORDE (a maior pontuação já feita).
 #
 # Fluxo previsto na proposta:
 #   - Ao iniciar o jogo: ler o recorde do arquivo.
 #   - Ao terminar a partida: se a pontuação atual for maior
 #     que o recorde, atualizar o arquivo.
-#
-# Essas funções NÃO usam pygame de propósito: assim elas são
-# "puras" (só mexem com dados) e podem ser testadas facilmente.
 # ============================================================
 
 

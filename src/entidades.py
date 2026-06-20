@@ -8,7 +8,7 @@
 #   - vírus (movimento em grupo)
 #   - colisões (anticorpo x vírus, vírus chegando na base)
 #
-# Importante: aqui também NÃO usamos pygame. Cada elemento é só
+# Importante: aqui não é usado funções do pygame. Cada elemento é só
 # um DICIONÁRIO com posição e tamanho. O desenho na tela fica
 # por conta do arquivo jogo.py. Isso deixa a lógica testável.
 # ============================================================
@@ -23,7 +23,7 @@ def criar_jogador():
     """Cria o jogador como um dicionário com todas as suas informações.
 
     A proposta pede um dicionário com posição, velocidade, vidas e
-    pontuação -> é exatamente o que montamos aqui.
+    pontuação 
     """
     jogador = {
         "x": config.LARGURA_TELA // 2 - config.JOGADOR_LARGURA // 2,  # centralizado
@@ -89,7 +89,7 @@ def mover_anticorpos(anticorpos, velocidade):
 def remover_inativos(anticorpos):
     """Devolve uma nova lista só com os disparos ainda ativos.
 
-    Fazemos isso para a lista não crescer para sempre (cada tiro
+    Feito para a lista não crescer para sempre (cada tiro
     que some é descartado).
     """
     ativos = []
